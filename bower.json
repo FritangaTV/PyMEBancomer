@@ -1,0 +1,17 @@
+{
+  "name": "PyMEBancomer",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Sebastian Alonso"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/sebasdthamuz/PyMEBancomer",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
