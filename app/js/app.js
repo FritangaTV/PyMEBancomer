@@ -1,7 +1,7 @@
-var epicApp = angular.module('epicApp', ['ui.router']);
+var pymeapp = angular.module('pymeapp', ['ui.router']);
 
 //comentario
-epicApp.config(function ($stateProvider, $urlRouterProvider) {
+pymeapp.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/dashboard");
     $stateProvider.state('dashboard', {
         url: "/dashboard",
