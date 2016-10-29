@@ -16,21 +16,15 @@
         <!-- endbuild -->
     </head>
     <body>
-    <h1>HOLA</h1>
         <div class="row" id="content" >
-            <div id="menu" class="hidden-xs" ng-include src="'templates/menu.html'" ></div>
             <div id="container" >
-                <div class="container-fluid mainContent" ui-view></div>
+                <div class="container-fluid mainContent" ng-include src="'templates/app.html'" ui-view></div>
             </div>
         </div>
-        <div class="container-fluid footer" ng-include src="'templates/footer.html'" scope="" onload="" ></div>
 
         <!-- build:js_vendor -->
         <!-- bower:js -->
-        <script src="../bower_components/angular/angular.js"></script>
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+        <!--script src="../bower_components/angular/angular.js"></script-->
         <!-- endbower -->
         <!-- endbuild -->
 
