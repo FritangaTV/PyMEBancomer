@@ -1,14 +1,13 @@
 var pymeapp = angular.module('pymeapp', ['ui.router']);
 
-//comentario
 pymeapp.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/dashboard");
     $stateProvider.state('dashboard', {
-        url: "/dashboard",
         templateUrl: "templates/dashboard.html",
         controller: 'dashboardCtrl'
     });
     $stateProvider.state('dashboard.report',{
+    	url: "/dashboard",
 	    views: {
 	      'today': {
 	        templateUrl: "templates/dashboard/today.html",

@@ -5,9 +5,11 @@ var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var wiredep = require('wiredep').stream;
 var inject = require('gulp-inject');
+var mainBowerFiles = require('main-bower-files');
+
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass', 'bower', 'inject'], function() {
+gulp.task('serve', ['sass', 'bower', 'inject', 'bowerFiles'], function() {
 
     browserSync.init({
         server: "./app"
@@ -51,5 +53,7 @@ gulp.task('js')
 
 gulp.task('default', ['serve']);
 
-var mainBowerFiles = require('main-bower-files');
-
+gulp.task('bowerFiles', function() {
+    return gulp.src(mainBowerFiles(),{ base: './bower_components' })
+        .pipe(gulp.dest('./app/bower_components/'))
+});
