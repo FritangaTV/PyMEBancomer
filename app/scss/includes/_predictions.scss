@@ -1,0 +1,32 @@
+.predicitonData{
+	.sales, .temperature{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.temperature{
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 150px;
+		height: 150px;
+		overflow: hidden;
+		h4{
+			font-size: 80px;
+			font-weight: bold;
+			background-color: rgba(255,255,255,0.6);
+		};
+		text-align: center;
+		&.hot{
+			color: rgba(223, 63, 61, 0.9);
+		}
+		&.cold{
+			color: rgba(35, 25, 140, 0.9);
+		}
+		&.cool{
+			color: rgba(178, 254, 125, 0.9);
+		}
+	}
+	border-bottom: 1px solid RGB(64, 94, 113);
+	.sales{
+		margin: 0 1em;
+	}
+}

@@ -16,7 +16,7 @@
     "weather": {
         "min_temp": 19,
         "max_temp": 29,
-        "mean_temp": 24,
+        "mean_temp": 10,
         "dew_point": 24,
         "mean_dew": 22,
         "min_dew": 19,
@@ -92,7 +92,7 @@
     "weather": {
         "min_temp": 19,
         "max_temp": 29,
-        "mean_temp": 24,
+        "mean_temp": 30,
         "dew_point": 24,
         "mean_dew": 22,
         "min_dew": 19,
