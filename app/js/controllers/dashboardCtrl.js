@@ -1,6 +1,5 @@
 pymeapp.controller('dashboardCtrl', ['$scope', '$http', function ($scope, $http) {
 
-        $scope.prediccion = [];
         $scope.client = '6996';
         $scope.initDate = '2015-12-01';
         $scope.endDate = '2016-03-01';
