@@ -15,7 +15,7 @@ gulp.task('serve', ['sass', 'bower', 'inject', 'bowerFiles'], function() {
         server: "./app"
     });
 
-    gulp.watch("app/scss/*.scss", ['sass']);
+    gulp.watch("app/scss/**/*.scss", ['sass']);
     gulp.watch("app/**/*.html").on('change', browserSync.reload);
     gulp.watch("js/**/*.js", ['inject','js-watch']);
 });

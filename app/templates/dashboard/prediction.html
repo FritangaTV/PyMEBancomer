@@ -1,10 +1,19 @@
-<ul class="nav nav-tabs">
-	<li role="presentation" class="active"><a href="#">Monto</a></li>
-	<li role="presentation"><a href="#">Transacciones</a></li>
-</ul>
-<div>
-	<d3-bars data="d3Data"></d3-bars>
-</div>
-<div>
-	<d3-bars data="d3Data"></d3-bars>
+<div class="row">
+	<div class="col-xs-12 col-md-3">
+		<h2>Predicciones</h2>
+		<img src="images/delorean.jpg" class="img-responsive">
+	</div>
+	<div class="col-xs-12 col-md-9">
+		<div class="predicitonData" ng-repeat="prediction in predicciones">
+			<h3><i class="fa fa-calendar fa-2x" aria-hidden="true"></i> {{prediction.date}}</h3>
+			<div class="temperature" ng-class="climaClass(prediction.weather.mean_temp)" style="background-image:url('/images/{{ clima(prediction.weather.mean_temp) }}');">
+				<h4>{{prediction.weather.mean_temp}}<sup>ºc</sup></h4>
+			</div>
+			<div class="sales">
+				<h3>Ventas</h3>
+				<p class="lead">Mínimo: ${{ prediction.aff_im_txn_min.toFixed() }} ( ${{prediction.cp_to_txn_min.toFixed() }} )</p>
+				<p class="lead">Máximo: ${{ prediction.aff_im_txn_max.toFixed() }} ( ${{prediction.cp_to_txn_max.toFixed() }} )</p>
+			</div>
+		</div>
+	</div>
 </div>
