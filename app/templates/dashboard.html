@@ -1,5 +1,17 @@
-<h1>Dashboard</h1>
-{{datos}}
-<div ui-view="today"></div>
-<div ui-view="prediction"></div>
-<div ui-view="tips"></div>
+<h1>Predicción de ventas</h1>
+{{prediccion}}
+<form>
+	  <div class="form-group">
+	    	<label for="cliente">Cliente</label>
+	    	<input type="cliente" class="form-control" id="cliente" placeholder="Cliente">
+	  </div>
+	  <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> Predecir</button>
+</form>
+<div id="results" class="row" >
+	<div class="col-sm-6 today" ui-view="today">
+	</div>
+	<div class="col-sm-6" >
+		<div class="prediction-week" ui-view="prediction"></div>
+		<div class="tips" ui-view="tips"></div>
+	</div>
+</div>
