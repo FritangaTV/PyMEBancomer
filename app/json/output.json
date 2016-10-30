@@ -35,6 +35,12 @@
         "prec": 0,
         "clouds": 4,
         "event": "no_data"
+    },
+    "meta": {
+        "day_num": "04",
+        "weekday": "Monday",
+        "feriado": "no",
+        "aniversarios": 433
     }
   },
   {
@@ -73,6 +79,12 @@
         "prec": 0,
         "clouds": 4,
         "event": "no_data"
+    },
+    "meta": {
+        "day_num": "04",
+        "weekday": "Monday",
+        "feriado": "no",
+        "aniversarios": 433
     }
   },
   {
@@ -111,6 +123,12 @@
         "prec": 0,
         "clouds": 4,
         "event": "no_data"
+    },
+    "meta": {
+        "day_num": "04",
+        "weekday": "Monday",
+        "feriado": "no",
+        "aniversarios": 433
     }
   },
   {
@@ -149,6 +167,12 @@
         "prec": 0,
         "clouds": 4,
         "event": "no_data"
+    },
+    "meta": {
+        "day_num": "04",
+        "weekday": "Monday",
+        "feriado": "no",
+        "aniversarios": 433
     }
   },
   {
@@ -187,6 +211,12 @@
         "prec": 0,
         "clouds": 4,
         "event": "no_data"
+    },
+    "meta": {
+        "day_num": "04",
+        "weekday": "Monday",
+        "feriado": "no",
+        "aniversarios": 433
     }
   },
   {
@@ -225,6 +255,12 @@
         "prec": 0,
         "clouds": 4,
         "event": "no_data"
+    },
+    "meta": {
+        "day_num": "04",
+        "weekday": "Monday",
+        "feriado": "no",
+        "aniversarios": 433
     }
   },
   {
@@ -263,6 +299,12 @@
         "prec": 0,
         "clouds": 4,
         "event": "no_data"
+    },
+    "meta": {
+        "day_num": "04",
+        "weekday": "Monday",
+        "feriado": "no",
+        "aniversarios": 433
     }
   }
 ]
