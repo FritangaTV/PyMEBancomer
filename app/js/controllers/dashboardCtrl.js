@@ -41,9 +41,10 @@ pymeapp.controller('dashboardCtrl', ['$scope', '$http', function ($scope, $http)
 
         $http({
 		  method: 'GET',
-		  url: '/json/samples/sample1/output.json'
+		  url: '/json/samples/sample1/output2.json'
 		}).then(function successCallback(response) {
 			$scope.predicciones = response.data;
+            $scope.today = $scope.predicciones.shift();
 	  	}, function errorCallback(response) {
 
 	  	});
