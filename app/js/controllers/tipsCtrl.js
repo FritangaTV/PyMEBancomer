@@ -61,7 +61,7 @@ pymeapp.controller('tipsCtrl', ['$scope', function ($scope) {
                 }
         		
         		// Futbol
-        		if(meta.partidoImportante == "yes" ){
+        		if(meta.partido_seleccion != "no" ){
         			$scope.tips.push({
         				desc:"Hoy hay partido de Futbol importante",
         				img:"futbol.jpg"
