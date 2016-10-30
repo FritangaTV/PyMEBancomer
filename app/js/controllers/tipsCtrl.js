@@ -2,6 +2,7 @@ pymeapp.controller('tipsCtrl', ['$scope', function ($scope) {
         $scope.tips = [];
         $scope.$watch('today', function() {
         	if(typeof $scope.today !== 'undefined'){
+                $scope.tips = [];
         		// Clima
         		var today_weather = $scope.today.weather;
         		var meta = $scope.today.meta;

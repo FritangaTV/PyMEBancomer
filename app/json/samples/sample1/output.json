@@ -1,9 +1,9 @@
 [
   {
     "date": "2016-09-23",
-    "aff_im_txn_min": 14565.223,
+    "aff_im_txn_min": 10565.223,
     "aff_to_txn_min": 12.8204,
-    "aff_im_txn_max": 24034.3248,
+    "aff_im_txn_max": 14034.3248,
     "aff_to_txn_max": 19.9659,
     "aff_im_mL7D": 17571.5714,
     "aff_to_mL7D": 19.8571,
