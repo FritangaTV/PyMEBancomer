@@ -9,9 +9,9 @@ pymeapp.controller('dashboardCtrl', ['$scope', '$http', function ($scope, $http)
         		method: 'GET',
         		url:'http://localhost:1337/t',
         		params: {
-        			"client": $scope.client,
-        			"initDate": $scope.initDate,
-        			"endDate": $scope.endDate
+        			"client": jQuery('#client').val(),
+        			"initDate": jQuery('#initDate').val(),
+        			"endDate": jQuery('#endDate').val()
         		}
         	}).then(function(res){
         		console.log(res.data);
@@ -25,6 +25,7 @@ pymeapp.controller('dashboardCtrl', ['$scope', '$http', function ($scope, $http)
         jQuery('#endDate').datetimepicker({
         	format: 'YYYY-MM-DD'
         });
+
         $scope.predicciones = [];
 
         $http({
