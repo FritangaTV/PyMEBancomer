@@ -1,4 +1,7 @@
 <h2>Recomendaciones</h2>
 <ul>
-	<li ng-repeat="tip in tips" >{{tip.desc}}</li>
+	<li ng-repeat="tip in tips" >
+		<h3>{{tip.desc}}</h3>
+		<img ng-src="images/tips/{{tip.img}}">
+	</li>
 </ul>
