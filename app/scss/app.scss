@@ -1,5 +1,6 @@
 /* Third Party */
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "bower_components/font-awesome/scss/font-awesome";
-@import "bower_components/eonasdan-bootstrap-datetimepicker/src/sass/bootstrap-datetimepicker";
+@import "bower_components/eonasdan-bootstrap-datetimepicker/src/scss/bootstrap-datetimepicker";
 @import "clientForm";
+@import "includes/_today.scss";

@@ -1,4 +1,5 @@
 pymeapp.controller('dashboardCtrl', ['$scope', '$http', function ($scope, $http) {
+
         $scope.prediccion = [];
         $scope.client = '6996';
         $scope.initDate = '2015-12-01';
@@ -25,12 +26,13 @@ pymeapp.controller('dashboardCtrl', ['$scope', '$http', function ($scope, $http)
         jQuery('#endDate').datetimepicker({
         	format: 'YYYY-MM-DD'
         });
+        $scope.predicciones = [];
 
         $http({
 		  method: 'GET',
 		  url: 'json/output.json'
 		}).then(function successCallback(response) {
-			$scope.prediccion = response.data;
+			$scope.predicciones = response.data;
 	  	}, function errorCallback(response) {
 
 	  	});
