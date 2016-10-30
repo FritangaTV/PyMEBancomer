@@ -29,7 +29,7 @@ pymeapp.controller('dashboardCtrl', ['$scope', '$http', function ($scope, $http)
 
         $http({
 		  method: 'GET',
-		  url: 'json/output.json'
+		  url: '/json/samples/sample1/output.json'
 		}).then(function successCallback(response) {
 			$scope.predicciones = response.data;
 	  	}, function errorCallback(response) {
