@@ -1,4 +1,4 @@
-<div class="row inputDataForm">
+<div class="row inputDataForm hidden">
 	<div class="col-xs-12 col-md-3">
 		<div class="form-group">
 			<input class="form-control" id="client" type="text" ng-model="client" placeholder="ID del cliente" >
@@ -21,6 +21,29 @@
 	</div>
 </div>
 
+<div class="row inputDataForm">
+	<div class="col-md-3">
+		<h1>Data samples</h1>
+		<div class="form-group">
+			<select name="mySelect" id="mySelect" class="form-control"
+      			ng-options="sample.client_name for sample in dataSamples track by sample.url"
+      			ng-model="selectedSample"></select>
+    	</div>
+	</div>
+	<div class="col-md-3">
+		<img src="{{selectedSample.logo}}" class="img-responsive" />
+	</div>
+	<div class="col-md-6">
+		<h1>{{selectedSample.client_name}} <small>Afiliacion: #{{selectedSample.client}}</small></h1>
+		<p class="lead">
+			Inicio de la muestra: {{selectedSample.initDate}}
+			<br />
+			Fin de la muestra: {{selectedSample.endDate}}
+		</p>
+	</div>
+</div>
+<hr />
+
 <div class="row">
 	<div class="col-xs-12">
 		<div id="results" class="row" >
@@ -32,7 +55,7 @@
 		</div>
 	</div>
 </div>
-
+<hr />
 <div class="row">
 	<div class="prediction-week col-xs-12" ui-view="prediction"></div>
 </div>
