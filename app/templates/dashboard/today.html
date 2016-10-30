@@ -1,1 +1,22 @@
-<img src="images/{{getIconToprediction}}.svg">
+<h2>Hoy</h2>
+<img ng-src="images/{{getIconToprediction()}}.svg">
+<div class="row" >
+	<table class="table" >
+		<tr>
+			<th>Monto máximo pronosticado</th>
+			<td>{{predicciones[0].aff_im_txn_max | currency}}</td>
+		</tr>
+		<tr>
+			<th>Monto minimo pronosticado</th>
+			<td>{{predicciones[0].aff_im_txn_min | currency}}</td>
+		</tr>
+		<tr>
+			<th>Transacciones máximo pronosticado</th>
+			<td>{{predicciones[0].aff_to_txn_max | number:0}}</td>
+		</tr>
+		<tr>
+			<th>Transacciones minimo pronosticado</th>
+			<td>{{predicciones[0].aff_to_txn_min | number:0}}</td>
+		</tr>
+	</table>
+</div>

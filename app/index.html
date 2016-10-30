@@ -18,13 +18,11 @@
         <!-- endbuild -->
     </head>
     <body>
-        <div class="row" id="content"  >
-            <div id="menu" class="hidden-xs" ng-include src="'templates/header.html'" ></div>
-            <div id="container" >
-                <div class="container-fluid mainContent" ui-view></div>
-            </div>
+        <div class="container">
+            <div ng-include src="'templates/header.html'" ></div>
+            <div class="mainContent" ui-view></div>
+            <div class=" footer" ng-include src="'templates/footer.html'" scope="" onload="" ></div>
         </div>
-        <div class="container-fluid footer" ng-include src="'templates/footer.html'" scope="" onload="" ></div>
 
         <!-- build:js_vendor -->
         <!-- bower:js -->
