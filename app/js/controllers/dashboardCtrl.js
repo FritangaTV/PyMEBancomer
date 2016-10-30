@@ -1,8 +1,19 @@
 pymeapp.controller('dashboardCtrl', ['$scope', '$http', function ($scope, $http) {
 
-        $scope.client = '6996';
-        $scope.initDate = '2015-12-01';
-        $scope.endDate = '2016-03-01';
+        $scope.client = '3328';
+        /*Afiliados con MEJORES ventas:
+        * 3339, 3328, 3600, 3328 // los primeros 2 comparten cp 06700
+        * Con PEORES ventas:
+        * 3583, 3522, 3573 (casualmente vende poco pero son muchas transacciones)
+        */
+
+        43552
+        $scope.initDate = '2016-03-02';
+        /*Mejores fechas para mostrar:
+        * 3600 
+        * 2016-03-02
+        */
+        $scope.endDate = '2016-03-08';
         $scope.voodoMagic = function(){
         	console.log('doing Magic!');
         	$http({
