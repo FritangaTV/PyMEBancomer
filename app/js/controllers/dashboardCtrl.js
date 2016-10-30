@@ -43,7 +43,7 @@ pymeapp.controller('dashboardCtrl', ['$scope', '$http', function ($scope, $http)
                 "client": 6996,
                 "client_name": "Fonda Juanita",
                 "initDate": "2015-12-01",
-                "endDate" : "2016-03-01",
+                "endDate" : "2016-09-23",
                 "logo" : "/images/logos/juanita.jpg"
             },
             {
