@@ -42,7 +42,7 @@ gulp.task('js-watch', ['js'], function (done) {
 gulp.task('inject', function () {
   var target = gulp.src('./app/index.html');
   // It's not necessary to read the files (will speed up things), we're only after their paths: 
-  var sources = gulp.src(['./app/js/**/*.js', './app/css/**/*.css'], {read: false});
+  var sources = gulp.src(['js/**/*.js', 'css/**/*.css'], {read: false});
  
   return target.pipe(inject(sources))
     .pipe(gulp.dest('./app'));
