@@ -1,13 +1,28 @@
+<div class="row inputDataForm">
+	<div class="col-xs-12 col-md-3">
+		<div class="form-group">
+			<input class="form-control" type="text" ng-model="client" placeholder="ID del cliente" >
+		</div>
+	</div>
+	<div class="col-xs-12 col-md-3">
+		<div class="form-group">
+			<input class="form-control" id="initDate" type="text" ng-model="initDate" placeholder="Fecha Inicio" >
+		</div>
+	</div>
+	<div class="col-xs-12 col-md-3">
+		<div class="form-group">
+			<input class="form-control" id="endDate" type="text" ng-model="endDate" placeholder="Fecha fin" >
+		</div>
+	</div>
+	<div class="col-xs-12 col-md-3">
+		<div class="form-group">
+			<a href="#" class="form-control btn btn-block btn-success" ng-click="voodoMagic();"><i class="fa fa-line-chart" aria-hidden="true" ></i> Voodo Magic!</a>
+		</div>
+	</div>
+</div>
+
 <div class="row">
 	<div class="col-xs-12">
-		<h1>Predicción de ventas</h1>
-		<form>
-			  <div class="form-group">
-			    	<label for="cliente">Cliente</label>
-			    	<input type="cliente" class="form-control" id="cliente" placeholder="Cliente">
-			  </div>
-			  <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> Predecir</button>
-		</form>
 		<div id="results" class="row" >
 			<div class="col-sm-6 today" ui-view="today">
 			</div>
