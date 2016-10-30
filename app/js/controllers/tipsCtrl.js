@@ -50,12 +50,20 @@ pymeapp.controller('tipsCtrl', ['$scope', function ($scope) {
         				img:"entre_semana.jpg"
         			});
         		}
+                
+                // feriado
+                if(meta.feriado != "no" ){
+                    $scope.tips.push({
+                        desc:"Se acerca un día feriado",
+                        img:"feriado.jpg"
+                    });
+                }
         		
-        		// feriado
-        		if(meta.feriado != "no" ){
+        		// Futbol
+        		if(meta.partidoImportante == "yes" ){
         			$scope.tips.push({
-        				desc:"Se acerca un día feriado",
-        				img:"feriado.jpg"
+        				desc:"Hoy hay partido de Futbol importante",
+        				img:"futbol.jpg"
         			});
         		}
         		
