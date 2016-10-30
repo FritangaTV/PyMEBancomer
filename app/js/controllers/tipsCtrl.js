@@ -54,7 +54,8 @@ pymeapp.controller('tipsCtrl', ['$scope', function ($scope) {
         		// feriado
         		if(meta.feriado != "no" ){
         			$scope.tips.push({
-        				desc:"Se acerca un día feriado" 
+        				desc:"Se acerca un día feriado",
+        				img:"feriado.jpg"
         			});
         		}
         		
