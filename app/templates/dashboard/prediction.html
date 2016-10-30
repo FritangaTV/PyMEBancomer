@@ -10,9 +10,17 @@
 				<h4>{{prediction.weather.mean_temp}}<sup>ºc</sup></h4>
 			</div>
 			<div class="sales">
-				<h3>Ventas</h3>
-				<p class="lead">Mínimo: ${{ prediction.aff_im_txn_min.toFixed() }} <i class="fa fa-caret-up text-success fa-2x" aria-hidden="true"></i> ( ${{prediction.cp_to_txn_min.toFixed() }} )</p>
-				<p class="lead">Máximo: ${{ prediction.aff_im_txn_max.toFixed() }} <i class="fa fa-caret-down text-danger fa-2x" aria-hidden="true"></i> ( ${{prediction.cp_to_txn_max.toFixed() }} )</p>
+				<div>
+					<h3>Ventas</h3>
+					<p class="lead">Mínimo: {{ prediction.aff_im_txn_min.toFixed() | currency }} </p>
+					<p class="lead">Máximo: {{ prediction.aff_im_txn_max.toFixed() | currency}} </p>
+				</div>
+			</div>
+			<div class="sales">
+				<div>
+					<h3>Tips</h3>
+					<p class="lead col-xs-6" ng-repeat="tip in prediction.tips" >&bull; {{tip.desc}}</p>
+				</div>
 			</div>
 		</div>
 	</div>

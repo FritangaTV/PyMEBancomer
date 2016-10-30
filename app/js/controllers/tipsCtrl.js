@@ -1,10 +1,10 @@
 pymeapp.controller('tipsCtrl', ['$scope', function ($scope) {
         $scope.tips = [];
-        $scope.$watch('predicciones', function() {
-        	if(typeof $scope.predicciones[0] !== 'undefined'){
+        $scope.$watch('today', function() {
+        	if(typeof $scope.today !== 'undefined'){
         		// Clima
-        		var today_weather = $scope.predicciones[0].weather;
-        		var meta = $scope.predicciones[0].meta;
+        		var today_weather = $scope.today.weather;
+        		var meta = $scope.today.meta;
         		//Temperatura
         		if(today_weather.mean_temp > 29){ // Día caluroso
         			$scope.tips.push({
