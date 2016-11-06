@@ -1,0 +1,28 @@
+$color-primario1: #0151A9;
+$color-primario2: #0180DA;
+$color-primario3: #01B5F9;
+$color-primario4: #23C5FA;
+$color-primario5: #83D9FC;
+$color-primario6: #C3ECFF;
+
+h1,h2{
+	color: $color-primario1 !important;
+}
+
+h3{
+	color:$color-primario2 !important;
+}
+
+h4{
+	color:$color-primario3 !important;
+}
+
+table{
+	tr{
+		background: $color-primario1;
+		border: 1px solid $color-primario1;
+	}
+	th,td{
+		color:white;
+	}
+}

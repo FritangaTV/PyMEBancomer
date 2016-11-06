@@ -2,8 +2,10 @@
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "bower_components/font-awesome/scss/font-awesome";
 @import "bower_components/eonasdan-bootstrap-datetimepicker/src/sass/bootstrap-datetimepicker";
-@import "includes/clientForm.scss";
+@import "includes/_general.scss";
+@import "includes/_clientForm.scss";
 @import "includes/_tips.scss";
 @import "includes/_clientForm";
 @import "includes/_today.scss";
 @import "includes/_predictions.scss";
+
