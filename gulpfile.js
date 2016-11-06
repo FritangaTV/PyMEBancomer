@@ -51,6 +51,8 @@ gulp.task('inject', function () {
 
 gulp.task('default', ['serve']);
 
+gulp.task('deploy', ['sass', 'bower', 'inject', 'bowerFiles']);
+
 gulp.task('bowerFiles', function() {
     return gulp.src(mainBowerFiles(),{ base: './bower_components' })
         .pipe(gulp.dest('./app/bower_components/'))
